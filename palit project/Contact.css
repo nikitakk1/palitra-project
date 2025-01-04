@@ -1,0 +1,252 @@
+body{
+  font-family: 'Noto Sans Georgian', sans-serif;
+}
+.up {
+    
+  background-color: #ffffff83;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid #df7a15;
+  padding: 15px;
+}
+
+.logo img {
+  display: block;
+}
+.up{
+  text-align: center;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav ul li {
+  margin: 0 15px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.navbar nav ul li:not(:last-child) {
+  border-right: 3px solid #df7a15;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  padding: 5px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ee7e4e;
+}
+.conc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+.container {
+  
+  max-width: 1050px;
+  width: 100%;
+  background: #ffffffb9;
+  border-radius: 12px;
+  margin: 0 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
+
+#plaitrafot2{
+    display: block;   
+  margin-left: auto;     
+  margin-right: auto;
+
+}
+.content .topic {
+  font-size: 22px;
+  font-weight: 500;
+  color: #000000;
+}
+.content form {
+  width: 40%;
+  margin-right: 30px;
+}
+.content .input-box {
+  height: 50px;
+  width: 100%;
+  margin: 16px 0;
+  position: relative;
+}
+.content .input-box input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  padding: 0 16px;
+  background: #df7a153f;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.content .input-box input:focus,
+.content .input-box input:valid {
+  border-color: #df7a15;
+  background-color: #fff;
+}
+.content .input-box label {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: #000000;
+  font-size: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.content .input-box input:focus ~ label,
+.content .input-box input:valid ~ label {
+  top: 0;
+  left: 12px;
+  display: 14px;
+  color: #df7a15;
+  background: #fff;
+}
+.content .message-box {
+  min-height: 100px;
+  position: relative;
+}
+.content .message-box textarea {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  resize: none;
+  background: #df7a153f;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  outline: none;
+  padding: 5px 16px;
+  transition: all 0.3s ease;
+}
+.content .message-box textarea:focus {
+  border-color: #df7a15;
+  background-color: #fff;
+}
+.content .message-box label {
+  position: absolute;
+  font-size: 16px;
+  color: #000000;
+  left: 18px;
+  top: 6px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.content .message-box textarea:focus ~ label {
+  left: 12px;
+  top: -10px;
+  color: #080508;
+  font-size: 14px;
+  background: #fff;
+}
+.content .input-box input[type="submit"] {
+  color: #fff;
+  background:   #df7a153f;
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.content .input-box input[type="submit"]:hover {
+  background-color:  #f59f4ed8;
+}
+
+
+footer {
+  
+  background-color: #ffffff;
+  padding: 2rem;
+  font-family: 'Noto Sans Georgian', sans-serif;
+  border-top: 3px solid #df7a15;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.info12{
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  
+
+}
+.contact-info div {
+  margin-right: 2rem;
+}
+
+.contact-info p {
+  margin: 0.2rem 0;
+  color: #d66117;
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.social-media img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  
+}
+
+.map iframe {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+

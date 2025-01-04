@@ -1,0 +1,437 @@
+/* General Styles */
+body {
+  background: radial-gradient(rgba(232, 154, 66, 0.3) 30%, #fbfbfb 70%);
+  font-family: 'Noto Sans Georgian', sans-serif; 
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* navigac */
+.up {
+  background-color: #ffffff83;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid #df7a15;
+  padding: 15px;
+}
+
+.logo img {
+  display: block;
+}
+
+.up {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav ul li {
+  margin: 0 15px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.navbar nav ul li:not(:last-child) {
+  border-right: 3px solid #df7a15;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  padding: 5px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ee7e4e;
+}
+
+/* saregistracio */
+.registraciafomr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh; /* Ensure vertical centering */
+}
+
+.konteineri {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.konteineri header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+
+.konteineri .saregistracio {
+  margin-top: 30px;
+}
+
+.saregistracio .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-box label {
+  color: #333;
+  font-weight: bold;
+}
+
+.saregistracio :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 96%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 0 15px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-box input:focus {
+  border-color: rgb(255, 165, 0); /* Orange border on focus */
+  box-shadow: 0 0 8px rgba(255, 165, 0, 0.4); /* Soft orange glow */
+}
+
+.saregistracio .column {
+  display: flex;
+  column-gap: 25px;
+}
+
+.saregistracio .gender-box {
+  margin-top: 20px;
+}
+
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.saregistracio :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.saregistracio .gender {
+  column-gap: 5px;
+}
+
+.gender input {
+  accent-color: rgb(255, 165, 0); /* Orange radio buttons */
+}
+
+.saregistracio :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+
+.gender label {
+  color: #707070;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+
+.saregistracio button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(255, 165, 0); /* Orange background */
+  border-radius: 8px;
+}
+
+.saregistracio button:hover {
+  background: rgb(255, 140, 0); /* Darker orange on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 500px) {
+  .saregistracio .column {
+    flex-wrap: wrap;
+  }
+
+  .saregistracio :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+
+
+/* sakontaqto */
+footer {
+  background-color: #f8f8f8;
+  padding: 2rem;
+  font-family: 'Noto Sans Georgian', sans-serif;
+  border-top: 1px solid #ddd;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.info12{
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  
+
+}
+.contact-info div {
+  margin-right: 2rem;
+}
+
+.contact-info p {
+  margin: 0.2rem 0;
+  color: #d66117;
+}
+
+.social-media {
+  margin-top: 1rem; /* Add spacing from the top */
+  display: flex;
+  gap: 0.5rem; /* Reduce gap between icons */
+  justify-content: flex-start; /* Align with text */
+}
+
+.social-media img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+.map iframe {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+/* sakontaqto */
+
+/*avtorizacia*/
+
+.avtorizaciabod {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.avtorizacia_form {
+  width: 100%;
+  max-width: 400px;
+  background: linear-gradient(135deg, #ffffff, #ffffff49);
+  border-radius: 12px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.avtorizacia_form h3 {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+.avtorizacia_option {
+  display: flex;
+  flex-direction: column; /* Stack the buttons vertically for better spacing */
+  gap: 15px; /* Add spacing between the buttons */
+  margin-bottom: 30px;
+}
+
+.avtorizacia_option .option a {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #e8eaed;/* Orange color */
+  border: 1px solid  #9aa0a6; /* Darker orange for border */
+  border-radius: 8px;
+  text-decoration: none;
+  color: rgb(0, 0, 0); /* White text for better contrast */
+  font-size: 16px;
+  font-weight: 600; /* Bold font for better emphasis */
+  transition: all 0.3s ease;
+  width: 100%; /* Ensure full width inside container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.avtorizacia_option {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.avtorizacia_option .option a:hover {
+  background: #ffa826b3;
+  border-color: #f57c00;
+  transform: scale(1.02);
+}
+
+.avtorizacia_option .option a img {
+  width: 20px;
+}
+
+p.separator {
+  font-family: 'Noto Sans Georgian', sans-serif;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #5f6368;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+p.separator span {
+  padding: 0 10px;
+  background: #ffffff00;
+}
+
+p.separator::before,
+p.separator::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #dadce0;
+}
+
+.input_box {
+  margin-bottom: 20px;
+}
+
+.input_box label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.input_box input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  padding: 0 10px;
+  font-size: 14px;
+  background: #f3f4fb;
+  transition: 0.3s;
+}
+
+.input_box input:focus {
+  border-color:  #ffa826b3;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(66, 133, 244, 0.4);
+}
+
+.password_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.password_title a {
+  color:  #ffa826b3;
+  text-decoration: none;
+}
+
+.password_title a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  height: 45px;
+  background:  #e98c01d3;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background:  #ffa826b3;
+}
+
+p.sign_up {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+p.sign_up a {
+  color:  #ffa826;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+p.sign_up a:hover {
+  text-decoration: underline;
+}
+
+
+/*avtorizacia*/
