@@ -2,6 +2,7 @@
 body {
   background: radial-gradient(rgba(232, 154, 66, 0.3) 30%, #fbfbfb 70%);
   font-family: 'Noto Sans Georgian', sans-serif; 
+  font-family: dm sans-serif; 
   margin: 0;
   padding: 0;
   
@@ -60,6 +61,50 @@ body {
 .navbar a:hover {
   color: #ee7e4e;
 }
+
+/* ena style*/
+.site-header {
+  display: flex;
+  justify-content: space-between; /* Align items at both ends */
+  align-items: center; /* Align items vertically */
+  padding: 10px 20px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Language Selector Styling */
+.change-lang {
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #d39126;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000000;
+  cursor: pointer;
+  margin-left: auto; /* Ensures content inside goes to the far right */
+  display: flex; /* Allows for future additions, if necessary */
+  align-items: center; /* Ensures vertical alignment */
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .site-header {
+      flex-direction: column; /* Stack items vertically */
+      padding: 15px; /* Add padding for smaller screens */
+  }
+
+  .container-free {
+      flex-direction: row; /* Retain horizontal alignment */
+      width: 100%;
+      justify-content: space-between; /* Keep items apart */
+  }
+}
+/* navigac */
+
+
 
 /* saregistracio */
 .registraciafomr {

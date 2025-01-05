@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ავტორიზაცია</title>
+    <title class="lng-login">ავტორიზაცია</title>
     <link rel="website icon" href="palitralogo.png">
     <link rel="stylesheet" href="registration.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -21,16 +22,23 @@
       <div class="navbar">
         <nav>
              <ul>
-              <li><a href="home.html">მთავარი</a></li>
-              <li><a href="about.html">ძირითადი ინფორმაცია</a></li>
-              <li><a href="login.html">ავტორიზაცია</a></li>
-              <li><a href="registration.html">რეგისრაცია</a></li>
-              <li><a href="contact.html">კონტაქტი</a></li>
-              <li><a href="">გამოწერები</a></li>
-              <li><a href="">როგორ შევიძინო</a></li>
+              <li><a href="home.html" class="lng-main" >მთავარი</a></li>
+              <li><a href="about.html" class="lng-about">ძირითადი ინფორმაცია</a></li>
+              <li><a href="login.html" class="lng-login" >ავტორიზაცია</a></li>
+              <li><a href="registration.html" class="lng-reg">რეგისრაცია</a></li>
+              <li><a href="contact.html" class="lng-cont" >კონტაქტი</a></li>
+              <li><a href="subsc.html" class="lng-sub">გამოწერა</a></li>
+              <li><a href="" class="lng-buy">როგორ შევიძინო</a></li>
              </ul>
         </nav>
       </div>
+
+      <div class="right-side">
+        <select class="change-lang">
+            <option value="ge" selected> Geo</option>
+            <option value="en">Eng</option>
+        </select>
+     </div>
   </div>  
 
 <br><br>
@@ -38,42 +46,42 @@
     <div class="avtorizacia_form">
       <!-- Login form container -->
       <form action="#">
-        <h3>ავტორიზაცია </h3>
+        <h3  class="lng-login">ავტორიზაცია </h3>
         <div class="avtorizacia_option">
           <!-- Google button -->
           <div class="option">
             <a href="#">
               <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Google" />
-              <span>Google-თ</span>
+              <span>Google</span>
             </a>
           </div>
           <!-- Apple button -->
           <div class="option">
             <a href="#">
               <img src="https://freepngdesign.com/content/uploads/images/t_apple-black-logo-6038.png" alt="Apple" />
-              <span>Apple-თ</span>
+              <span >Apple</span>
             </a>
           </div>
         </div>
         <!-- Login option separator -->
         <p class="separator">
-          <span>ან</span>
+          <span class="lng-or" >ან</span>
         </p>
         <!-- Email input box -->
         <div class="input_box">
-          <label for="email">მომხამრებლის სახელი</label>
-          <input type="email" id="email" placeholder="შეიყვანე  მომხამრებლის სახელი / ემაილი" required />
+          <label for="email" class="lng-name">მომხამრებლის სახელი</label>
+          <input type="email" id="email"  required />
         </div>
         <!-- Password input box -->
         <div class="input_box">
           <div class="password_title">
-            <label for="password">პაროლი</label>
+            <label for="password" class="lng-password">პაროლი</label>
           </div>
-          <input type="password" id="password" placeholder="შეიყვანე შენი პაროლი" required />
+          <input type="password" id="password"  required />
         </div>
         <!-- Login button -->
-        <button type="submit">შესვლა</button>
-        <p class="sign_up"> არ გაქვს ექაუნთი? <a href="registration.html">რეგისრაცია</a></p>
+        <button type="submit" class="lng-shesvla" >შესვლა</button>
+        <p class="lng-sign_up">არ გაქვს ექაუნთი?</p>
       </form>
     </div>
   </div>
@@ -89,7 +97,7 @@
       <div class="contact-info">
         <div class="info12">
           <div>
-            <p><img src="https://cdn0.iconfinder.com/data/icons/flat-color-1/100/sqi2016-flat-go-41-512.png" width="20"> <b>ტელეფონი</b></p>
+            <p><img src="https://cdn0.iconfinder.com/data/icons/flat-color-1/100/sqi2016-flat-go-41-512.png" width="20"><b class="lng-phone">ტელეფონი</b></p>
             <p>(+995 32) 2 38 38 71</p>
             <p>(+995 32) 2 47 00 45</p>
            
@@ -102,12 +110,12 @@
             </div>
           </div>
           <div>
-            <p><img src="https://cdn-icons-png.flaticon.com/512/8907/8907170.png" width="20"> <b>მისამართი</b></p>
-            <p>იოსებიძის ქ. №49</p>
-            <p>0160, თბილისი, საქართველო</p>
+            <p><img src="https://cdn-icons-png.flaticon.com/512/8907/8907170.png" width="20"> <b class="lng-address" >მისამართი</b></p>
+            <p class="lng-address1">იოსებიძის ქ. №49</p>
+            <p class="lng-address2">0160, თბილისი, საქართველო</p>
           </div>
           <div>
-            <p><img src="https://img.icons8.com/ios7/512/FD7E14/gmail.png" width="20"> <b>ელ.ფოსტა</b></p>
+            <p><img src="https://img.icons8.com/ios7/512/FD7E14/gmail.png" width="20"> <b class="lng-email">ელ.ფოსტა</b></p>
             <p>book@palitra.ge</p>
           </div>
         </div>
@@ -121,6 +129,7 @@
   
 
 
-  <script src="js/script.js"></script>
+  <script src="lang.js"></script>
+
 </body>
 </html>

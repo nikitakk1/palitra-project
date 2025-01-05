@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>რეგისრაცია</title>
+    <title class="lng-reg">რეგისრაცია</title>
     <link rel="website icon" href="palitralogo.png">
     <link rel="stylesheet" href="registration.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  
+   
   <div class="up">
     <div class="logo">
        <a href="home.html"><img src="logo.png" width="120px" alt="Logo"></a>
@@ -21,16 +22,23 @@
       <div class="navbar">
         <nav>
              <ul>
-              <li><a href="home.html">მთავარი</a></li>
-              <li><a href="about.html">ძირითადი ინფორმაცია</a></li>
-              <li><a href="login.html">ავტორიზაცია</a></li>
-              <li><a href="registration.html">რეგისრაცია</a></li>
-              <li><a href="contact.html">კონტაქტი</a></li>
-              <li><a href="">გამოწერები</a></li>
-              <li><a href="">როგორ შევიძინო</a></li>
+              <li><a href="home.html" class="lng-main" >მთავარი</a></li>
+              <li><a href="about.html" class="lng-about">ძირითადი ინფორმაცია</a></li>
+              <li><a href="login.html" class="lng-login" >ავტორიზაცია</a></li>
+              <li><a href="registration.html" class="lng-reg">რეგისრაცია</a></li>
+              <li><a href="contact.html" class="lng-cont" >კონტაქტი</a></li>
+              <li><a href="subsc.html" class="lng-sub">გამოწერა</a></li>
+              <li><a href="" class="lng-buy">როგორ შევიძინო</a></li>
              </ul>
         </nav>
       </div>
+
+      <div class="right-side">
+        <select class="change-lang">
+            <option value="ge" selected> Geo</option>
+            <option value="en">Eng</option>
+        </select>
+     </div>
   </div>  
      
 
@@ -38,64 +46,64 @@
 <br>
 <div class="registraciafomr">
   <section class="konteineri">
-    <header><b>რეგისტაცია</b></header>
+    <header><b class="lng-reg" >რეგისტაცია</b></header>
     <p class="sign_up"> გაქვს ექაუნთი? <a href="login.html">შესვლა</a></p>
     <form action="#" class="saregistracio">
       <div class="input-box">
-        <label>მომხმარებლის სახელი</label>
-        <input type="text" placeholder="შეიყვანეთ  მომხმარებლის სახელი" required />
+        <label class="lng-name" >მომხმარებლის სახელი</label>
+        <input type="text">
       </div>
       <div class="input-box">
-        <label>ემაილი</label>
-        <input type="email" placeholder="შეიყვანეთ თქვენი ემაილი" required />
+        <label class="lng-email" >ემაილი</label>
+        <input type="email" >
       </div>
       <div class="input-box">
-        <label>პაროლი</label>
-        <input type="password" placeholder="შეიყვანეთ თქვენი პაროლი" required />
+        <label class="lng-password" >პაროლი</label>
+        <input type="password">
       </div>
       <div class="input-box">
-        <label>დაადასტურეთ პაროლი</label>
-        <input type="password" placeholder="დაადასტურეთ პაროლი" required />
+        <label class="lng-passwordconf">დაადასტურეთ პაროლი</label>
+        <input type="password">
       </div>
       <div class="column">
         <div class="input-box">
-          <label>მობილური</label>
-          <input type="number" placeholder="შეიყვანეთ თქვენი მობილური" required />
+          <label class="lng-phone" >მობილური</label>
+          <input type="number">
         </div>
         <div class="input-box">
-          <label>რეგისტაციის თარიღი</label>
-          <input type="date" required />
+          <label class="lng-regdate" >რეგისტაციის თარიღი</label>
+          <input type="date">
         </div>
       </div>
       
       <div class="column">
         <div class="input-box">
-          <label>ქვეყანა</label>
-          <input type="text" placeholder="შეიყვანეთ ქვეყანა" required />
+          <label class="lng-country">ქვეყანა</label>
+          <input type="text">
         </div>
         <div class="input-box">
-          <label>ქალაქი</label>
-          <input type="text" placeholder="შეიყვანეთ ქალაქი" required />
+          <label class="lng-city">ქალაქი</label>
+          <input type="text">
         </div>
       </div>
       <div class="gender-box">
-        <h3>სქესი</h3>
+        <h3 class="lng-gender">სქესი</h3>
         <div class="gender-option">
           <div class="gender">
             <input type="radio" id="check-male" name="gender" checked />
-            <label for="check-male">მამრობითი</label>
+            <label for="check-male"class="lng-male">მამრობითი</label>
           </div>
           <div class="gender">
             <input type="radio" id="check-female" name="gender" />
-            <label for="check-female">მდედრობითი</label>
+            <label for="check-female" class="lng-female">მდედრობითი</label>
           </div>
           <div class="gender">
             <input type="radio" id="check-other" name="gender" />
-            <label for="check-other">სხვა</label>
+            <label for="check-other" class="lng-other">სხვა</label>
           </div>
         </div>
       </div>
-      <button>შექმნა</button>
+      <button class="lng-crea">შექმნა</button>
     </form>
   </section>
 </div>
@@ -112,7 +120,7 @@
     <div class="contact-info">
       <div class="info12">
         <div>
-          <p><img src="https://cdn0.iconfinder.com/data/icons/flat-color-1/100/sqi2016-flat-go-41-512.png" width="20"> <b>ტელეფონი</b></p>
+          <p><img src="https://cdn0.iconfinder.com/data/icons/flat-color-1/100/sqi2016-flat-go-41-512.png" width="20"><b class="lng-phone">ტელეფონი</b></p>
           <p>(+995 32) 2 38 38 71</p>
           <p>(+995 32) 2 47 00 45</p>
          
@@ -125,12 +133,12 @@
           </div>
         </div>
         <div>
-          <p><img src="https://cdn-icons-png.flaticon.com/512/8907/8907170.png" width="20"> <b>მისამართი</b></p>
-          <p>იოსებიძის ქ. №49</p>
-          <p>0160, თბილისი, საქართველო</p>
+          <p><img src="https://cdn-icons-png.flaticon.com/512/8907/8907170.png" width="20"> <b class="lng-address" >მისამართი</b></p>
+          <p class="lng-address1">იოსებიძის ქ. №49</p>
+          <p class="lng-address2">0160, თბილისი, საქართველო</p>
         </div>
         <div>
-          <p><img src="https://img.icons8.com/ios7/512/FD7E14/gmail.png" width="20"> <b>ელ.ფოსტა</b></p>
+          <p><img src="https://img.icons8.com/ios7/512/FD7E14/gmail.png" width="20"> <b class="lng-email">ელ.ფოსტა</b></p>
           <p>book@palitra.ge</p>
         </div>
       </div>
@@ -139,11 +147,11 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2849.8280239042188!2d44.773062!3d41.725277!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472d9511db91d%3A0x72c184afebd0db53!2zNDkg4YOX4YOY4YOc4YOQIOGDmOGDneGDoeGDlOGDkeGDmOGDq-GDmOGDoSDhg6Xhg6Phg6nhg5AsIOGDl-GDkeGDmOGDmuGDmOGDoeGDmA!5e1!3m2!1ska!2sge!4v1735387683924!5m2!1ska!2sge" width="540" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
-</footer>
+ </footer>
 
 
 
 
-  
+  <script src="lang.js"></script>
 </body>
 </html>

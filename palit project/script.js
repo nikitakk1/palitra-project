@@ -1,9 +1,6 @@
 
 
 
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const slidesContainer = document.querySelector('.slidebi');
     const slides = document.querySelectorAll('.slidebi img');

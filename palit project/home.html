@@ -2,38 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>მთავარი</title>
+    <title class="lng-main" >მთავარი</title>
     <link rel="website icon" href="palitralogo.png">
     <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;700&display=swap" rel="stylesheet">
     
 </head>
 <body>
 
 
-
-
-    <div class="up">
+ <div class="up">
         <div class="logo">
            <a href="home.html"><img src="logo.png" width="120px" alt="Logo"></a>
          </div>
-
-
+    
+    
         <!-- navigacia -->
           <div class="navbar">
             <nav>
                  <ul>
-                    <li><a href="home.html">მთავარი</a></li>
-                    <li><a href="about.html">ძირითადი ინფორმაცია</a></li>
-                    <li><a href="login.html">ავტორიზაცია</a></li>
-                    <li><a href="registration.html">რეგისრაცია</a></li>
-                    <li><a href="contact.html">კონტაქტი</a></li>
-                    <li><a href="">გამოწერები</a></li>
-                    <li><a href="">როგორ შევიძინო</a></li>
+                  <li><a href="home.html" class="lng-main" >მთავარი</a></li>
+                  <li><a href="about.html" class="lng-about">ძირითადი ინფორმაცია</a></li>
+                  <li><a href="login.html" class="lng-login" >ავტორიზაცია</a></li>
+                  <li><a href="registration.html" class="lng-reg">რეგისრაცია</a></li>
+                  <li><a href="contact.html" class="lng-cont" >კონტაქტი</a></li>
+                  <li><a href="subsc.html" class="lng-sub">გამოწერა</a></li>
+                  <li><a href="" class="lng-buy">როგორ შევიძინო</a></li>
                  </ul>
             </nav>
           </div>
-       </div>  
+    
+          <div class="right-side">
+            <select class="change-lang">
+                <option value="ge" selected> Geo</option>
+                <option value="en">Eng</option>
+            </select>
+         </div>
+    </div>
 
  <br><br>
 
@@ -83,7 +89,7 @@
  <br><br>
 
  <section class="product"> 
-    <h2 class="siaxlehead">სიახლე</h2>
+    <h2 class="siaxlehead"><p class="lng-siaxle">სიახლე</p></h2>
     <div class="orange-line"></div>
     <div class="product-container">
         <div class="siaxlekalata">
@@ -92,7 +98,7 @@
                 <img src="http://laterna.ge/fina_images/28067.jpg" class="siaxlipics" >
             </div>
             <div class="product-info">
-                <h2 class="product-brand">წიგნი - A Little Life</h2>
+                <h2 class="product-brand"> <p class="lng-book1">წიგნი- A Little Life</p></h2>
                 <span class="price">48 ₾</span>
             </div>
         </div>
@@ -102,7 +108,7 @@
                 <img src="https://api.palitral.ge/storage/upload/image-png/2024-12-52/letargia_cc883789eb8df993e4a16819b6ed20f7.png.webp" class="siaxlipics" >
             </div>
             <div class="product-info">
-                <h2 class="product-brand">წიგნი - "ლეთარგია" </h2>
+                <h2 class="product-brand"> <p class="lng-book2">წიგნი - "ლეთარგია" </p></h2>
                 <span class="price">12.95 ₾</span>
             </div>
         </div>
@@ -112,7 +118,7 @@
                 <img src="https://api.palitral.ge/storage/upload/image-png/2024-12-51/tAVISUFLEBA_m_063f0b3e353090246cd4bfcca24064eb.png.webp" class="siaxlipics" >
             </div>
             <div class="product-info">
-                <h2 class="product-brand">მაისური - "თავისუფლება" - შავი - M </h2>
+                <h2 class="product-brand"><p class="lng-tshirt1">მაისური - "თავისუფლება" - შავი </p> </h2>
                 <span class="price">45.69 ₾</span>
             </div>
         </div>
@@ -122,7 +128,7 @@
                 <img src="https://api.palitral.ge/storage/upload/image-png/2024-12-50/saqmiani-dgiuri-iasamnisferi-mockup_137c6a1f1b8f7704ea2b50a0de9f4076.png.webp" class="siaxlipics" >
             </div>
             <div class="product-info">
-                <h2 class="product-brand">დღიური 2025</h2>
+                <h2 class="product-brand"><p class="lng-book3">დღიური 2025</p></h2>
                 <span class="price">24.95 ₾</span>
             </div>
         </div>
@@ -134,7 +140,7 @@
            
             </div>
             <div class="product-info">
-                <h2 class="product-brand">ჰუდი - "ერი" - ლურჯი - L</h2>
+                <h2 class="product-brand"><p class="lng-tshirt2">ჰუდი - "ერი" - ლურჯი - L</p></h2>
                 <span class="price">60 ₾</span>
             </div>
         </div>
@@ -145,26 +151,26 @@
 
 
 
-<h2 class="siaxlehead">ბლოგი</h2>
+<h2 class="siaxlehead"><p class="lng-blog">ბლოგი</p></h2>
     <div class="type4">
         <div class="card">
           <a href="https://palitral.ge/blogs/292/ცხოველების%20ფერმა"><img src="https://api.palitral.ge/storage/blog/rDxofziyQuIFEAUKaje38gdQhTi6PqOlD5yqSzjI.png"></a> 
             <div class="card-content">
-                <p ><b>ცხოველების ფერმა</b></p>
+                <p class="lng-info1" ><b>ცხოველების ფერმა</b></p>
                
             </div>
         </div>
         <div class="card">
            <a href="https://palitral.ge/blogs/291/ოლანი%20ბიწაძე%20—%20ახალი%20ხმა%20ქართულ%20ლიტერატურაში"><img src="https://api.palitral.ge/storage/blog/nY0G1sqMWecr6GKAgGaXD3IvxZvN8KY5puNEWeDi.png"></a> 
             <div class="card-content">
-                <p ><b>ოლანი ბიწაძე — ახალი ხმა ქართულ ლიტერატურაში</b></p>
+                <p class="lng-info2"><b>ოლანი ბიწაძე — ახალი ხმა ქართულ ლიტერატურაში</b></p>
                
             </div>
         </div>
         <div class="card">
         <a href="https://palitral.ge/blogs/290/ნიკოლოზ%20ცისკარიშვილის%20აჩრდილები%20პრემია%20საბას%20ფინალისტებს%20შორის%20მოხვდა%20-%20ინტერვიუ%20ავტორთან"><img src="https://api.palitral.ge/storage/blog/CTALgzt8kJD8vYPCBhPICqYOopbDyNwNbfdoizsU.jpg" ></a> 
             <div class="card-content">
-                <p ><b>ნიკოლოზ ცისკარიშვილის „არიდელები“ პრესში</b></p>
+                <p class="lng-info3"><b>ნიკოლოზ ცისკარიშვილის ,არიდელები' პრესში</b></p>
                
             </div>
         </div>
@@ -176,63 +182,63 @@
 
 <br><br>
 <section class="product"> 
-    <h2 class="siaxlehead">თვის ბესტსელერები</h2>
+    <h2 class="siaxlehead"><p class="lng-beste">თვის ბესტსელერები</p></h2>
     <div class="orange-line"></div>
     <div class="product-container">
         <div class="siaxlekalata">
             <div class="product-image">
-                <div class="bestseller-label">ბესტსელერი</div>
+                <div class="lng-bestseller_la">ბესტსელერი</div>
                 <button class="guli1"><img src="fav.png" width="35" ></button>
                 <img src="https://static.megustaleer.com/images/libros_650_x/P374767.jpg" class="siaxlipics" >
             </div>
             <div class="product-info">
-                <h2 class="product-brand">ჩვეულებრივი ადამიანები</h2>
+                <h2 class="product-brand"><p class="lng-book4">ჩვეულებრივი ადამიანები</p></h2>
                 <span class="price">25 ₾</span>
             </div>
         </div>
         <div class="siaxlekalata">
             <div class="product-image">
-                <div class="bestseller-label">ბესტსელერი</div>
+                <div class="lng-bestseller_la">ბესტსელერი</div>
                 <button class="guli1"><img src="fav.png" width="35" ></button>
                 <img src="https://api.palitral.ge/storage/upload/image-png/2024-02-06/asdwg_a668285d84ee5add8541a89542b6f1a7.png.webp" class="siaxlipics" >
             </div>
             <div class="product-info">
-                <h2 class="product-brand"> ძალაუფლების 48 კანონი</h2>
+                <h2 class="product-brand"> <p class="lng-book5">ძალაუფლების 48 კანონი</p></h2>
                 <span class="price">40 ₾</span>
             </div>
         </div>
         <div class="siaxlekalata">
             <div class="product-image">
-                <div class="bestseller-label">ბესტსელერი</div>
+                <div class="lng-bestseller_la">ბესტსელერი</div>
                 <button class="guli1"><img src="fav.png" width="35" ></button>
                 <img src="https://api.palitral.ge/storage/upload/image-png/2024-08-34/huveri_4f6880cdbe401e3b3555fb24ec2c53d5.png.webp" class="siaxlipics" >
             </div>
             <div class="product-info">
-                <h2 class="product-brand">ყველაფერი მთავრდება ჩვენით </h2>
+                <h2 class="product-brand"><p class="lng-book6">ყველაფერი მთავრდება ჩვენით</p> </h2>
                 <span class="price">16.95 ₾</span>
             </div>
         </div>
         <div class="siaxlekalata">
             <div class="product-image">
-                <div class="bestseller-label">ბესტსელერი</div>
+                <div class="lng-bestseller_la">ბესტსელერი</div>
                 <button class="guli1"><img src="fav.png" width="35" ></button>
                 <img src="https://m.media-amazon.com/images/I/71xH0ALI4-L._AC_UF1000,1000_QL80_.jpg" class="siaxlipics" >
             </div>
             <div class="product-info">
-                <h2 class="product-brand">იკიგაი</h2>
+                <h2 class="product-brand"><p class="lng-book7">იკიგაი</p></h2>
                 <span class="price">17.95 ₾</span>
             </div>
         </div>
         <!-- Additional Product -->
         <div class="siaxlekalata">
             <div class="product-image">
-                <div class="bestseller-label">ბესტსელერი</div>
+                <div class="lng-bestseller_la">ბესტსელერი</div>
                 <button class="guli1"><img src="fav.png" width="35" ></button>
                 <img src="https://m.media-amazon.com/images/I/71KcUgYanhL.jpg" class="siaxlipics" >
            
             </div>
             <div class="product-info">
-                <h2 class="product-brand">ეველინ ჰიუგოს შვიდი ქმარი</h2>
+                <h2 class="product-brand"><p class="lng-book8">ეველინ ჰიუგოს შვიდი ქმარი</p></h2>
                 <span class="price">16.95 ₾</span>
             </div>
         </div>
@@ -242,24 +248,24 @@
 
 
 <br><br>
-<h2 class="siaxlehead">ვლოგები</h2>
+<h2 class="siaxlehead"><p class="lng-vlog">ვლოგები</p></h2>
 <div class="vlogi">
     <div class="video">
         <iframe src="https://www.youtube.com/embed/l_INihQUDhU?si=cvF8gZoJ2zaeUXtg" title="YouTube video player" allowfullscreen></iframe>
         <div class="videokontenti">
-            <p>რატი რატიანი „მკვლელობა სადგურის უბანში"</p>
+            <p class="lng-info4">რატი რატიანი „მკვლელობა სადგურის უბანში"</p>
         </div>
     </div>
     <div class="video">
         <iframe src="https://www.youtube.com/embed/odMIm4BAJVU?si=83sVrKJVwVpkeOH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="videokontenti">
-            <p>ლიტერატურული სამკუთხედი - მარიამ გურგენიშვილის "მარგალიტები"</p>
+            <p class="lng-info5">ლიტერატურული სამკუთხედი - მარიამ გურგენიშვილის "მარგალიტები"</p>
         </div>
     </div>
     <div class="video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/bPp4FTX91VM?si=-zDirovEqzom8X4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="videokontenti">
-           <p>განახლებული ლიტერატურული პროექტი</p>
+           <p class="lng-info6">განახლებული ლიტერატურული პროექტი</p>
         </div>
     </div>
 </div>
@@ -292,11 +298,11 @@
     <div class="contact-info">
       <div class="info12">
         <div>
-          <p><img src="https://cdn0.iconfinder.com/data/icons/flat-color-1/100/sqi2016-flat-go-41-512.png" width="20"> <b>ტელეფონი</b></p>
+          <p><img src="https://cdn0.iconfinder.com/data/icons/flat-color-1/100/sqi2016-flat-go-41-512.png" width="20"><b class="lng-phone">ტელეფონი</b></p>
           <p>(+995 32) 2 38 38 71</p>
           <p>(+995 32) 2 47 00 45</p>
          
-           <br><br>
+           
           <div class="social-media">
             <a href="https://www.facebook.com/Palitra.L.Publishing"><img src="facebooki.png"></a>
             <a href="https://www.instagram.com/palitral.publishing/"><img src="insta.png"></a>
@@ -305,12 +311,12 @@
           </div>
         </div>
         <div>
-          <p><img src="https://cdn-icons-png.flaticon.com/512/8907/8907170.png" width="20"> <b>მისამართი</b></p>
-          <p>იოსებიძის ქ. №49</p>
-          <p>0160, თბილისი, საქართველო</p>
+          <p><img src="https://cdn-icons-png.flaticon.com/512/8907/8907170.png" width="20"> <b class="lng-address" >მისამართი</b></p>
+          <p class="lng-address1">იოსებიძის ქ. №49</p>
+          <p class="lng-address2">0160, თბილისი, საქართველო</p>
         </div>
         <div>
-          <p><img src="https://img.icons8.com/ios7/512/FD7E14/gmail.png" width="20"> <b>ელ.ფოსტა</b></p>
+          <p><img src="https://img.icons8.com/ios7/512/FD7E14/gmail.png" width="20"> <b class="lng-email">ელ.ფოსტა</b></p>
           <p>book@palitra.ge</p>
         </div>
       </div>
@@ -321,7 +327,7 @@
   </div>
 </footer>
 
-
+<script src="lang.js"></script>
 <script src="script.js"></script>
 </body>
 
