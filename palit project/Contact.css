@@ -1,28 +1,37 @@
 body{
+  background: radial-gradient( rgba(232, 154, 66, 0.3) 30%, #fbfbfb 70%);
   font-family: 'Noto Sans Georgian', sans-serif;
+  font-family: dm sans-serif; 
 }
+
+/* navigac */
 .up {
-    
-  background-color: #ffffff83;
+  background-color: #fffffff9;
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 3px solid #df7a15;
   padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  text-align: center;
+  
 }
 
 .logo img {
   display: block;
 }
-.up{
+
+.up {
   text-align: center;
 }
+
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
-  
 }
 
 .navbar nav ul {
@@ -53,137 +62,258 @@ body{
 .navbar a:hover {
   color: #ee7e4e;
 }
+
+/* ena style*/
+.site-header {
+  display: flex;
+  justify-content: space-between; /* Align items at both ends */
+  align-items: center; /* Align items vertically */
+  padding: 10px 20px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Language Selector Styling */
+.change-lang {
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #d39126;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000000;
+  cursor: pointer;
+  margin-left: auto; /* Ensures content inside goes to the far right */
+  display: flex; /* Allows for future additions, if necessary */
+  align-items: center; /* Ensures vertical alignment */
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .site-header {
+      flex-direction: column; /* Stack items vertically */
+      padding: 15px; /* Add padding for smaller screens */
+  }
+
+  .container-free {
+      flex-direction: row; /* Retain horizontal alignment */
+      width: 100%;
+      justify-content: space-between; /* Keep items apart */
+  }
+}
+/* navigac */
+
+/*kontaqti*/
+
+
+/* kontaqti */
 .conc {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  
+  background-color: #ffffff00; /* Light background */
+  padding: 40px 0; /* Spacing for the section */
 }
 
 .container {
-  
   max-width: 1050px;
   width: 100%;
-  background: #ffffffb9;
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.95); /* Slight transparency */
+  border-radius: 16px;
   margin: 0 20px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Depth effect */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .container .content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: 25px 20px;
+  flex-wrap: wrap; /* For responsiveness */
+  padding: 40px 30px;
+  gap: 20px; /* Add spacing between elements */
 }
 
-#plaitrafot2{
-    display: block;   
-  margin-left: auto;     
-  margin-right: auto;
-
+/* Image styling */
+.image-box {
+  flex: 1;
+  max-width: 40%; /* Restrict image width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px; /* Rounded corners */
+  
+}
+
+form {
+  flex: 2;
+  max-width: 55%; /* Adjust form width */
+}
+
+#plaitrafot2 {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 12px; /* Rounded edges for softer visuals */
+}
+
+/* Header styling */
 .content .topic {
-  font-size: 22px;
-  font-weight: 500;
-  color: #000000;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333; /* Neutral dark tone */
+  margin-bottom: 20px;
 }
+
+/* Form container adjustments */
 .content form {
-  width: 40%;
+  width: 100%;
+  max-width: 480px;
   margin-right: 30px;
+  flex: 1;
 }
+
+/* Input field styling */
 .content .input-box {
-  height: 50px;
-  width: 100%;
-  margin: 16px 0;
   position: relative;
-}
-.content .input-box input {
-  position: absolute;
-  height: 100%;
   width: 100%;
-  border-radius: 6px;
-  font-size: 16px;
-  outline: none;
-  padding: 0 16px;
-  background: #df7a153f;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
+  margin: 20px 0;
 }
+
+.content .input-box input {
+  width: 100%;
+  height: 50px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 16px;
+  background: rgba(223, 122, 21, 0.2);
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
 .content .input-box input:focus,
 .content .input-box input:valid {
   border-color: #df7a15;
-  background-color: #fff;
+  background: #fff;
 }
+
 .content .input-box label {
   position: absolute;
-  left: 18px;
   top: 50%;
-  color: #000000;
-  font-size: 15px;
-  pointer-events: none;
+  left: 16px;
   transform: translateY(-50%);
-  transition: all 0.3s ease;
+  font-size: 14px;
+  color: #777;
+  pointer-events: none;
+  transition: 0.3s ease;
 }
+
 .content .input-box input:focus ~ label,
 .content .input-box input:valid ~ label {
-  top: 0;
+  top: -10px;
   left: 12px;
-  display: 14px;
+  font-size: 12px;
   color: #df7a15;
   background: #fff;
+  padding: 0 4px;
 }
+
+/* Message box styling */
 .content .message-box {
-  min-height: 100px;
-  position: relative;
-}
-.content .message-box textarea {
-  position: absolute;
-  height: 100%;
   width: 100%;
-  resize: none;
-  background: #df7a153f;
-  border: 2px solid transparent;
-  border-radius: 6px;
-  outline: none;
-  padding: 5px 16px;
-  transition: all 0.3s ease;
+  position: relative;
+  margin: 20px 0;
 }
+
+.content .message-box textarea {
+  width: 100%;
+  min-height: 120px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 16px;
+  background: rgba(223, 122, 21, 0.2);
+  outline: none;
+  resize: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
 .content .message-box textarea:focus {
   border-color: #df7a15;
-  background-color: #fff;
-}
-.content .message-box label {
-  position: absolute;
-  font-size: 16px;
-  color: #000000;
-  left: 18px;
-  top: 6px;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-.content .message-box textarea:focus ~ label {
-  left: 12px;
-  top: -10px;
-  color: #080508;
-  font-size: 14px;
   background: #fff;
 }
-.content .input-box input[type="submit"] {
-  color: #020202;
-  background:   #df7a153f;
-  padding-left: 0;
-  font-size: 18px;
+
+.content .message-box label {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  font-size: 14px;
+  color: #777;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.content .message-box textarea:focus ~ label {
+  top: -10px;
+  left: 12px;
+  font-size: 12px;
+  color: #df7a15;
+  background: #fff;
+  padding: 0 4px;
+}
+
+/* Button styling */
+.input-box button {
+  width: 100%;
+  height: 55px;
+  color: #fff;
+  font-size: 1rem;
   font-weight: 500;
+  background: #ffa500; /* Bright orange */
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
-.content .input-box input[type="submit"]:hover {
-  background-color:  #f59f4ed8;
+
+.input-box button:hover {
+  background: #ff8c00; /* Darker orange on hover */
+  transform: scale(1.02); /* Slightly larger on hover */
 }
 
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Stack elements */
+    align-items: center;
+  }
+
+  .image-box,
+  form {
+    max-width: 100%; /* Allow full width */
+  }
+
+  .image-box {
+    margin-bottom: 20px; /* Add spacing between image and form */
+  }
+}
+/*kontaqti*/
+
+
+
+
+
+/*mapi da media*/
 footer {
   
   background-color: #ffffff;
