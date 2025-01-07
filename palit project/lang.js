@@ -229,7 +229,44 @@ const langArr = {
     gagzavna:{
         ge: "გაგზავნა",
         en: "Send",
-    },         
+    },
+     chabua:{
+        ge: "ჭაბუა ამირეჯიბი",
+        en: "Chabua Amirejibi",
+     },
+     new:{
+        ge: "ახალი",
+        en: "New",
+     },
+     tve:{
+        ge: "/ თვე",
+        en: "/ Month",
+     },
+     saba:{
+        ge: "სულხან-საბა ორბელიანი",
+        en: "Sulkhan-Saba Orbeliani",
+     },
+     klasik:{
+        ge: "პალიტრა კლასიკა",
+        en: "Palitra Classic",
+    },
+    legadam:{
+        ge: "ლეგენდარული ადამიანები",
+        en: "Legendary People",
+    },
+    book:{
+        ge:"წიგნი",
+        en:"Book",
+    },
+    agata:{
+        ge: "აგათა კრისტი",
+        en: "Agatha Christie",
+    },
+    kartuli:{
+        ge: "XXI საუკუნის ქართული მოთხრობა",
+        en: "XXI century Georgian storys",
+    }
+
 
 };
 
