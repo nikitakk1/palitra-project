@@ -1,7 +1,8 @@
 body{
   background: radial-gradient( rgba(232, 154, 66, 0.3) 30%, #fbfbfb 70%);
   font-family: 'Noto Sans Georgian', sans-serif;
-  font-family: dm sans-serif; 
+  margin: 0;
+  padding: 0;
 }
 
 /* navigac */
@@ -92,15 +93,38 @@ body{
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .site-header {
-      flex-direction: column; /* Stack items vertically */
-      padding: 15px; /* Add padding for smaller screens */
+  .navbar nav ul {
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: center;
   }
 
-  .container-free {
-      flex-direction: row; /* Retain horizontal alignment */
-      width: 100%;
-      justify-content: space-between; /* Keep items apart */
+  .navbar nav ul li {
+    margin: 10px 0; /* Add vertical spacing between items */
+    border-right: none; /* Remove borders for vertical layout */
+  }
+
+  .logo img {
+    max-height: 40px; /* Adjust logo size for smaller screens */
+  }
+
+  .change-lang {
+    font-size: 12px; /* Reduce font size */
+    padding: 5px 8px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar a {
+    font-size: 14px; /* Smaller font for very small screens */
+  }
+
+  .site-header {
+    flex-direction: column; /* Stack logo and navigation */
+    text-align: center;
+  }
+
+  .change-lang {
+    margin: 10px 0; /* Add spacing for language selector */
   }
 }
 /* navigac */
@@ -454,6 +478,71 @@ footer {
 }
 
 
+#lng-kitxvebi {
+  text-align: center;
+  color: #000;
+  font-size: 44px;
+}
+
+.kitxvebi1 {
+  background: #ffffff9c;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 30px;
+}
+
+.kitxvebi1 h1 {
+  font-size: 28px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.kitxvebi1 p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.kitxvebi1 a {
+  color: rgb(252, 136, 54); /* Orange color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.kitxvebi1 a:hover {
+  text-decoration: underline;
+}
+
+.kitxvebi1 .highlight {
+  color: rgb(252, 136, 54);
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  #lng-kitxvebi {
+    font-size: 32px; /* Reduce title size */
+    margin: 15px 0;
+  }
+
+  .kitxvebi1 {
+    padding: 20px; /* Reduce padding */
+    margin: 10px; /* Add small margin */
+  }
+
+  .kitxvebi1 h1 {
+    font-size: 24px; /* Adjust heading size */
+  }
+
+  .kitxvebi1 p {
+    font-size: 14px; /* Reduce paragraph size */
+    line-height: 1.6; /* Adjust line height */
+  }
+
+  .kitxvebi1 a {
+    font-size: 14px; /* Adjust link size */
+  }
+}
 
 
 
