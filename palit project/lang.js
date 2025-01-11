@@ -298,7 +298,5 @@ function changeLanguage(lang = window.location.hash.substr(1)) {
             element.innerHTML = langArr[key][lang];
         });
     });
-}
+}changeLanguage(); 
 
-// Initialize language on page load
-changeLanguage();

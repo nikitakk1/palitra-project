@@ -42,40 +42,49 @@
   </div>  
      
 
-
-<br>
-<div class="registraciafomr">
+ <br>
+ <div class="registraciafomr">
   <section class="konteineri">
-    <header><b class="lng-reg" >რეგისტაცია</b></header>
-    <p class="sign_up"> <b class="lng-haveacc" >გაქვს ექაუნთი? <a href="login.html">შესვლა</a></b></p>
+    <header><b class="lng-reg">რეგისტაცია</b></header>
+    <p class="sign_up">
+      <b class="lng-haveacc">გაქვს ექაუნთი? <a href="login.html">შესვლა</a></b>
+    </p>
     <form action="#" class="saregistracio">
       <div class="input-box">
-        <label class="lng-name" >მომხმარებლის სახელი</label>
+        <label class="lng-name">მომხმარებლის სახელი</label>
         <input type="text">
       </div>
       <div class="input-box">
-        <label class="lng-email" >ემაილი</label>
-        <input type="email" >
+        <label class="lng-email">ემაილი</label>
+        <input type="email" id="email">
+        <p id="error-message" class="error" style="display: none;">ელფოსტა არასწორია ან აკლია @!</p>
       </div>
-      <div class="input-box">
-        <label class="lng-password" >პაროლი</label>
-        <input type="password">
-      </div>
+        <div class="container">
+          <div class="input-box">
+            <label class="lng-password">პაროლი</label>
+            <i class="fas fa-eye-slash show_hide"></i>
+            <input spellcheck="false" type="password">
+          </div>
+          <div class="indicator">
+            <div class="icon-text">
+              <h6 class="text"></h6>
+            </div>
+          </div>
+        </div>
       <div class="input-box">
         <label class="lng-passwordconf">დაადასტურეთ პაროლი</label>
-        <input type="password">
+        <input type="password" id="password-confirm">
       </div>
       <div class="column">
         <div class="input-box">
-          <label class="lng-phone" >მობილური</label>
+          <label class="lng-phone">მობილური</label>
           <input type="number">
         </div>
         <div class="input-box">
-          <label class="lng-regdate" >რეგისტაციის თარიღი</label>
+          <label class="lng-regdate">რეგისტაციის თარიღი</label>
           <input type="date">
         </div>
       </div>
-      
       <div class="column">
         <div class="input-box">
           <label class="lng-country">ქვეყანა</label>
@@ -91,7 +100,7 @@
         <div class="gender-option">
           <div class="gender">
             <input type="radio" id="check-male" name="gender" checked />
-            <label for="check-male"class="lng-male">მამრობითი</label>
+            <label for="check-male" class="lng-male">მამრობითი</label>
           </div>
           <div class="gender">
             <input type="radio" id="check-female" name="gender" />
@@ -103,7 +112,7 @@
           </div>
         </div>
       </div>
-      <button class="lng-crea">შექმნა</button>
+      <button id="validate-button" class="lng-crea">შექმნა</button>
     </form>
   </section>
 </div>
@@ -153,5 +162,6 @@
 
 
   <script src="lang.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
