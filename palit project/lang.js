@@ -108,7 +108,10 @@ const langArr = {
         ge: 'გაქვთ ექაუნთი? <a href="login.html" >შესვლა</a>',
         en: 'Already have an account? <a href="login.html">Login</a>',
     },
-
+    shedi: {
+        ge: "შესვლა",
+        en: "Log in",
+    },
     siaxle:{
         ge: "სიახლე",
         en: "New",
