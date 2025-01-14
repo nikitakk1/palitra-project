@@ -36,8 +36,8 @@ const patterns = {
 };
 
 input.addEventListener("keyup", () => {
-    const val = input.value;
-    indicator.classList.toggle("active", val !== "");
+    const val = input.value;                           //რომელიც გამოიყენება კლასების ავტომატურად დამატებასა ან მოხსნაზე ელემენტისთვის.
+    indicator.classList.toggle("active", val !== ""); // toggle კლასის "active" დაემატება თუ value არის ცარიელი , 
 
     if (val.match(patterns.alphabet) && val.match(patterns.numbers) && val.match(patterns.special) && val.length >= 7) {
         text.textContent = "პაროლი ძლიერია";

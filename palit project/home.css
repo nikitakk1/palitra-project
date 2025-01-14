@@ -84,44 +84,32 @@ body {
     align-items: center; /* Ensures vertical alignment */
 }
 
-/* Mobile Responsive */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .navbar nav ul {
-      flex-direction: column; /* Stack navigation links vertically */
-      align-items: center;
-    }
-  
     .navbar nav ul li {
-      margin: 10px 0; /* Add vertical spacing between items */
-      border-right: none; /* Remove borders for vertical layout */
+        margin: 5px 0; /* Reduces margin for smaller screens */
+        border-right: none; /* Removes right border for smaller screens */
     }
-  
-    .logo img {
-      max-height: 40px; /* Adjust logo size for smaller screens */
-    }
-  
-    .change-lang {
-      font-size: 12px; /* Reduce font size */
-      padding: 5px 8px; /* Adjust padding */
-    }
-}
-  
-@media (max-width: 480px) {
-    .navbar a {
-      font-size: 14px; /* Smaller font for very small screens */
-    }
-  
-    .site-header {
-      flex-direction: column; /* Stack logo and navigation */
-      text-align: center;
-    }
-  
-    .change-lang {
-      margin: 10px 0; /* Add spacing for language selector */
-    }
-}
-  /* navigac */
 
+    .navbar nav ul li:not(:last-child) {
+        border-bottom: 3px solid #df7a15; /* Adds bottom border for smaller screens */
+    }
+
+    .navbar nav ul {
+        flex-direction: column; /* Stacks items vertically on smaller screens */
+    }
+
+    .site-header {
+        flex-direction: column; /* Stacks header elements vertically on smaller screens */
+        align-items: flex-start; /* Aligns items to the start for a cleaner look */
+    }
+
+    .change-lang {
+        margin: 10px 0; /* Adds margin to language selector on smaller screens */
+    }
+}
+ /* navigac */
+ 
 /* Main Content */
 #palitra19 {
     height: 100px;
@@ -217,6 +205,39 @@ footer {
     padding-top: 1rem;
     color: #666;
     font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+    .palitra19 {
+        width: 100%; 
+        height: auto; 
+    }
+
+    #shesaxeb {
+        font-size: 40px; 
+    }
+
+    .teqsi1 {
+        font-size: 14px;
+    }
+
+    .footer-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .info12 {
+        flex-direction: column; 
+        gap: 1rem; 
+    }
+
+    .contact-info div {
+        margin-right: 0; 
+    }
+
+    .footer-bottom {
+        flex-direction: column; 
+        align-items: center;
+    }
 }
 
 /* Slider */
@@ -348,46 +369,19 @@ footer {
     transform: scale(1.2);
 }
 /* Mobile Responsive */  
-@media screen and (max-width: 768px) {
+/* Responsive adjustments */
+@media (max-width: 768px) {
     .wrapper {
-      width: 90%; /* Adjust width for smaller screens */
-      height: 250px; /* Adjust height */
+        width: 100%; /* Ensures wrapper adjusts for smaller screens */
+        height: auto; /* Maintains aspect ratio */
     }
-    
-    /* Adjust image clip-path transition for mobile */
-    .wrapper .img img {
-      clip-path: circle(0% at 50% 50%);
-    }
-    
-    .sliders label {
-      width: 12px;
-      height: 12px;
-    }
-    
-    .sliders label:hover {
-      transform: scale(1.1);
+
+    .small-images img {
+        width: 100%; /* Adjusts width for smaller screens */
     }
 }
-@media screen and (max-width: 480px) {
-    .wrapper {
-      width: 100%; /* Full width on very small screens */
-      height: 200px; /* Further reduce height */
-    }
-    
-    /* Further adjustments for mobile screens */
-    .wrapper .img img {
-      clip-path: circle(0% at 50% 50%);
-    }
-  
-    .sliders label {
-      width: 10px;
-      height: 10px;
-    }
-    
-    .sliders label:hover {
-      transform: scale(1);
-    }
-}
+
+
 /* Product */
 .product {
     padding: 20px;
@@ -487,6 +481,28 @@ footer {
     border-radius: 5px;
     font-family: 'Noto Sans Georgian', sans-serif;
 }
+@media (max-width: 768px) {
+    .siaxlehead {
+        font-size: 32px; /* Adjusts font size for smaller screens */
+    }
+
+    .siaxlekalata {
+        width: 100%; /* Adjusts width for smaller screens */
+        margin: 10px 0; /* Adjusts margin for smaller screens */
+    }
+
+    .product-image {
+        height: auto; /* Maintains aspect ratio */
+    }
+
+    .product-brand {
+        font-size: 14px; /* Adjusts font size for smaller screens */
+    }
+
+    .price {
+        font-size: 18px; /* Adjusts font size for smaller screens */
+    }
+}
 
 /* Blog */
 .type4 {
@@ -505,13 +521,11 @@ footer {
     transition: 0.3s;
     overflow: hidden;
 }
-
 .card:hover {
-    width: 400px;
-    height: 400px;
+    width: 360px;
+    height: 360px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 .card img {
     width: 100%;
     height: auto;
@@ -522,7 +536,30 @@ footer {
     padding: 10px;
     text-align: center;
 }
-
+.baneri3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card1 {
+    width: 250px;
+    height: 250px;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px rgb(179, 75, 0);
+    transition: 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card1:hover {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+}
 .type4 p {
     color: rgb(13, 16, 17);
     font-size: 14px;
@@ -571,6 +608,33 @@ iframe {
     color: rgb(216, 147, 8);
     font-weight: bold;
 }
+@media (max-width: 768px) {
+    .type4 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .card {
+        width: 100%; 
+        height: auto; 
+        margin: 10px 0; 
+    }
+
+    .card:hover {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .vlogi {
+        grid-template-columns: 1fr; 
+        gap: 1em; 
+    }
+
+    iframe {
+        height: auto; 
+    }
+}
+
 
 /* Contact */
 .sxva {
@@ -609,30 +673,44 @@ iframe {
     color: #333;
     text-align: center;
 }
-
-/* Media Queries */
-@media screen and (max-width: 768px) {  
- 
-    .sliderrrs, .sliderrrs2 {
-        flex-direction: row;
+@media screen and (max-width: 768px) {
+    .sxva {
+        gap: 15px; /* Reduced gap for smaller screens */
     }
 
-    .small-images, #palitra19 img {
-        width: 100px;
+    .palitrebi {
+        padding: 20px; /* Reduced padding for compact layout */
     }
 
-    .product-container {
-        flex-direction: column;
+    .palitrebi img {
+        width: 90px; /* Smaller images for smaller screens */
+        height: 90px;
+    }
+
+    .palitrebi p {
+        font-size: 12px; /* Adjusted font size */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sxva {
+        flex-direction: column; /* Stack items vertically on very small screens */
         align-items: center;
+        gap: 10px;
     }
 
-    .product-info {
-        text-align: center;
+    .palitrebi {
+        padding: 15px; /* Further reduce padding */
+        max-width: 90%; /* Ensure items fit within screen width */
     }
 
-    .video {
-        width: 100%;
-        margin: 0;
+    .palitrebi img {
+        width: 80px; /* Smaller size for very small screens */
+        height: 80px;
+    }
+
+    .palitrebi p {
+        font-size: 11px; /* Smallest readable font size */
     }
 }
 /* kviris avtori */
@@ -714,6 +792,67 @@ iframe {
     font-weight: bold;
     color: #d9534f;
 }
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .author-section {
+        grid-template-columns: 1fr; /* Stack image and description */
+        text-align: center; /* Center-align text for better readability */
+    }
+
+    .author-section img {
+        max-width: 150px; /* Reduce image size */
+        margin: 0 auto 20px; /* Center image and add margin */
+    }
+
+    .author-description {
+        max-width: 100%; /* Allow full width */
+    }
+
+    .author-description h1 {
+        font-size: 24px; /* Reduce font size */
+    }
+
+    .author-description p {
+        font-size: 14px; /* Reduce font size */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .books-section {
+        grid-template-columns: 1fr; /* Display books in a single column */
+        gap: 15px;
+    }
+
+    .book {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .book img {
+        width: 100px; /* Adjust image size */
+        margin-bottom: 10px;
+    }
+
+    .book h3 {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .book span {
+        font-size: 16px; /* Reduce font size */
+    }
+
+    .author-section {
+        padding: 10px; /* Add some padding */
+    }
+
+    .author-description h1 {
+        font-size: 20px; /* Further reduce heading size */
+    }
+
+    .author-description p {
+        font-size: 12px; /* Smallest readable font */
+    }
+}
+
 /* kviris avtori */
 
 /* cookies */
@@ -795,5 +934,65 @@ iframe {
 #declineBtn:hover {
     background-color: #f49140;
     color: #fff;
-  }
-/* cookies */
+}
+@media screen and (max-width: 768px) {
+    .cookies {
+        right: 10px; /* Adjust to fit smaller screens */
+        max-width: 90%; /* Occupy 90% of the screen width */
+        bottom: 20px; /* Move up for better visibility */
+        padding: 15px; /* Slightly reduce padding */
+    }
+
+    .cookies header h2 {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .cookies header i {
+        font-size: 28px; /* Reduce icon size */
+    }
+
+    .cookies .data p {
+        font-size: 14px; /* Reduce text size */
+    }
+
+    .cookies .buttons .button {
+        padding: 8px 0;
+        width: calc(50% - 5px); /* Slightly smaller button widths */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cookies {
+        right: 5px; /* Narrow margin */
+        max-width: 95%; /* Fit almost the full screen */
+        bottom: 10px; /* Move further up */
+        padding: 10px; /* Minimize padding */
+    }
+
+    .cookies header {
+        flex-direction: column; /* Stack icon and text */
+        align-items: flex-start; /* Align for a clean mobile layout */
+    }
+
+    .cookies header i {
+        font-size: 24px; /* Smaller icon */
+    }
+
+    .cookies header h2 {
+        font-size: 18px; /* Smaller font for title */
+    }
+
+    .cookies .data p {
+        font-size: 12px; /* Minimize text size */
+    }
+
+    .cookies .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Add spacing between buttons */
+    }
+
+    .cookies .buttons .button {
+        width: 100%; /* Full-width buttons */
+    }
+}
+/* cookies  */

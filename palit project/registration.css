@@ -90,41 +90,27 @@ body {
   display: flex; /* Allows for future additions, if necessary */
   align-items: center; /* Ensures vertical alignment */
 }
-
-/* Mobile Responsive */
 @media (max-width: 768px) {
-  .navbar nav ul {
-    flex-direction: column; /* Stack navigation links vertically */
-    align-items: center;
-  }
-
   .navbar nav ul li {
-    margin: 10px 0; /* Add vertical spacing between items */
-    border-right: none; /* Remove borders for vertical layout */
+      margin: 5px 0; /* Reduces margin for smaller screens */
+      border-right: none; /* Removes right border for smaller screens */
   }
 
-  .logo img {
-    max-height: 40px; /* Adjust logo size for smaller screens */
+  .navbar nav ul li:not(:last-child) {
+      border-bottom: 3px solid #df7a15; /* Adds bottom border for smaller screens */
   }
 
-  .change-lang {
-    font-size: 12px;
-    padding: 5px 8px;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar a {
-    font-size: 14px; /* Smaller font for very small screens */
+  .navbar nav ul {
+      flex-direction: column; /* Stacks items vertically on smaller screens */
   }
 
   .site-header {
-    flex-direction: column; /* Stack logo and navigation */
-    text-align: center;
+      flex-direction: column; /* Stacks header elements vertically on smaller screens */
+      align-items: flex-start; /* Aligns items to the start for a cleaner look */
   }
 
   .change-lang {
-    margin: 10px 0; /* Add spacing for language selector */
+      margin: 10px 0; /* Adds margin to language selector on smaller screens */
   }
 }
 /* navigac */

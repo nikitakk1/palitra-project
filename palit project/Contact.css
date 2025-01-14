@@ -93,38 +93,26 @@ body{
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .navbar nav ul {
-    flex-direction: column; /* Stack navigation links vertically */
-    align-items: center;
-  }
-
   .navbar nav ul li {
-    margin: 10px 0; /* Add vertical spacing between items */
-    border-right: none; /* Remove borders for vertical layout */
+      margin: 5px 0; /* Reduces margin for smaller screens */
+      border-right: none; /* Removes right border for smaller screens */
   }
 
-  .logo img {
-    max-height: 40px; /* Adjust logo size for smaller screens */
+  .navbar nav ul li:not(:last-child) {
+      border-bottom: 3px solid #df7a15; /* Adds bottom border for smaller screens */
   }
 
-  .change-lang {
-    font-size: 12px; /* Reduce font size */
-    padding: 5px 8px; /* Adjust padding */
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar a {
-    font-size: 14px; /* Smaller font for very small screens */
+  .navbar nav ul {
+      flex-direction: column; /* Stacks items vertically on smaller screens */
   }
 
   .site-header {
-    flex-direction: column; /* Stack logo and navigation */
-    text-align: center;
+      flex-direction: column; /* Stacks header elements vertically on smaller screens */
+      align-items: flex-start; /* Aligns items to the start for a cleaner look */
   }
 
   .change-lang {
-    margin: 10px 0; /* Add spacing for language selector */
+      margin: 10px 0; /* Adds margin to language selector on smaller screens */
   }
 }
 /* navigac */
@@ -152,6 +140,7 @@ body{
   display: flex;
   flex-direction: column;
 }
+
 .container .content {
   display: flex;
   align-items: flex-start;
@@ -174,7 +163,6 @@ body{
   width: 100%;
   height: auto;
   border-radius: 12px; /* Rounded corners */
-  
 }
 
 form {
@@ -314,23 +302,29 @@ form {
   transform: scale(1.02); /* Slightly larger on hover */
 }
 
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .content {
-    flex-direction: column; /* Stack elements */
-    align-items: center;
-  }
-
-  .image-box,
-  form {
-    max-width: 100%; /* Allow full width */
+  .container .content {
+    flex-direction: column; /* Stacks content vertically on smaller screens */
+    align-items: center; /* Centers content for a balanced look */
   }
 
   .image-box {
-    margin-bottom: 20px; /* Add spacing between image and form */
+    max-width: 100%; /* Ensures image takes full width on smaller screens */
+    margin-bottom: 20px; /* Adds space between image and form */
+  }
+
+  form {
+    max-width: 100%; /* Adjusts form width for smaller screens */
+  }
+
+  .content .topic {
+    font-size: 24px; /* Adjusts font size for better readability */
+    text-align: center; /* Centers text */
   }
 }
+
+
 /*kontaqti*/
 
 .wignisgamow {
@@ -416,7 +410,18 @@ form {
   font-weight: bold;
   border-radius: 5px;
 }
+@media (max-width: 768px) {
+  .containergamow {
+    flex-direction: column; /* Stacks cards vertically on smaller screens */
+    align-items: center; /* Centers cards for better look */
+  }
 
+  .gamowerebi {
+    width: 80%; /* Adjusts width for smaller screens */
+    min-width: unset; /* Removes minimum width for better fit */
+    margin-bottom: 20px; /* Adds spacing between cards */
+  }
+}
 
 /*mapi da media*/
 footer {
@@ -475,6 +480,28 @@ footer {
   padding-top: 1rem;
   color: #666;
   font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stacks footer sections vertically on smaller screens */
+    align-items: center; /* Centers footer sections for better look */
+  }
+
+  .info12 {
+    flex-direction: column; /* Stacks info sections vertically on smaller screens */
+    align-items: center; /* Centers info sections for better look */
+  }
+
+  .contact-info div {
+    margin-right: 0; /* Removes right margin for smaller screens */
+    margin-bottom: 1rem; /* Adds bottom margin for spacing */
+  }
+
+  .footer-bottom {
+    flex-direction: column; /* Stacks bottom sections vertically on smaller screens */
+    align-items: center; /* Centers bottom sections for better look */
+    text-align: center; /* Centers text for balanced look */
+  }
 }
 
 

@@ -1,8 +1,8 @@
-const cookieBox = document.querySelector(".cookies"),  // Use the correct class
+const cookieBox = document.querySelector(".cookies"),
 buttons = document.querySelectorAll(".button");
 
-const executeCodes = () => {
-  if (document.cookie.split('; ').some(item => item.startsWith('palitracookies='))) return;// Check if the cookie is already set
+const coookiecreate = () => {
+  if (document.cookie.split('; ').some(item => item.startsWith('palitracookies='))) return;// დაადგენს თუ ქუქი უკვე დარეგისტრირდა
 
   cookieBox.classList.add("show");
 
@@ -11,12 +11,11 @@ const executeCodes = () => {
   cookieBox.classList.remove("show");
 
   if (button.id === "acceptBtn") {
-  // Set the cookie for 1 month (max-age calculation)
   document.cookie = "palitracookies=true; max-age=" + 60 * 60 * 24 * 30 + "; path=/;";
   }
   });
  });
 };
 
-// Call executeCodes function when the page has finished loading
-window.addEventListener("DOMContentLoaded", executeCodes);
+// როდესაც გვერდი სრულად დაიტვირთება, და შემდეგ გამოიძახებს coookiecreate ფუნქციას.
+window.addEventListener("DOMContentLoaded", coookiecreate);

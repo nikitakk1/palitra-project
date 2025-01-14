@@ -268,38 +268,118 @@ const langArr = {
     kartuli:{
         ge: "XXI საუკუნის ქართული მოთხრობა",
         en: "XXI century Georgian storys",
+    },
+    privacy1:{
+        ge: "პალიტრა L - კონფიდენციალურობის პოლიტიკა",
+        en: "Palitra L - Privacy Policy",
+    },
+    purpose: {
+        ge: "მიზანი",
+        en: "Purpose"
+    },
+    purpose1: {
+        ge: "ვებგვერდ <span class='highlight'>palitra-ზე</span> ვიზიტის დროს ვალდებული ხართ გაეცნოთ ჩვენს კონფიდენციალურობის პოლიტიკას. შესაძლებელია წინამდებარე კონფიდენციალურობის პოლიტიკაში განხორციელდეს ცვლილებები და დამატებები, შესაბამისად Palitra მოგიწოდებთ, რომ პერიოდულად გადაამოწმოთ კონფიდენციალურობის პოლიტიკა.",
+        en: "While visiting the <span class='highlight lng-palitra-site'>palitra</span> website, you are required to review our privacy policy. Changes and additions may be made to this privacy policy; therefore, Palitra encourages you to periodically review the privacy policy.",
+    },
+    personal1:{
+        ge: "პერსონალური მონაცემების დამუშავება",
+        en: "Personal Data Processing"
+    },
+    personal2:{
+        ge:" მომხმარებელი, რომელიც <span class='highlight'>Palitra-ს</span> საკუთარი სურვილით მიაწოდებს პერსონალური ხასიათის ინფორმაციას, ის ავტომატურად ანიჭებს უფლებამოსილებას <span class='highlight'>Palitra-ს</span> გამოიყენოს მომხმარებლის პერსონალური მონაცემები შენახვისა და დამუშავების მიზნით.", 
+        en:"A user who voluntarily provides personal information to <span class='highlight lng-palitra-brand'>Palitra</span> automatically grants permission for <span class='highlight lng-palitra-brand'>Palitra</span> to use the user's personal data for storage and processing purposes.",
+    },
+    cookie1:{
+        ge: "Cookies და ლოგ ფაილები",
+        en: "Cookies and Log Files",
+    },
+    cookie2:{
+        ge: "<span class='highlight'>Palitra</span>  სარგებლობს ლოგ ფაილების სტანდარტული პროცედურით. სხვა ვებგვერდების მსგავსად, <span class='highlight'>Palitra </span>იყენებს Cookies. ლოგ ფაილები და Cookies გამოიყენება იმისთვის, რომ ვებგვერდმა შეინახოს ინფორმაცია მომხმარებლების ქცევის შესახებ და გააუმჯობესოს მომსახურების ხარისხი.",
+        en: "<span class='highlight'>Palitra</span> follows standard log file procedures. Like many other websites, <span class='highlight lng-palitra-brand'>Palitra</span> uses cookies. Log files and cookies are used to store information about users' preferences and to improve the quality of service.",
+    },
+    user1:{
+        ge: "მომხმარებლის მონაცემების გაზიარება",
+        en: "Sharing of User Data",
+    },
+    user2:{    
+         ge: "პერსონალური მონაცემების გაზიარება ხორციელდება პარტნიორი საკურიერო მომსახურების გამწევი კომპანიებისათვის, რომლებიც უზრუნველყოფენ მომხმარებლისათვის შეძენილი პროდუქციის მიწოდებას მის მიერ მითითებულ მისამართზე.",
+         en: "  Personal data sharing is carried out with partner courier service providers who ensure the delivery of products purchased by the user to the address specified by them.",
+    },
+    privacy2:{
+        ge: "© 2025 Palitra L. ყველა უფლება დაცულია.",
+        en: "© 2025 Palitra L. All rights reserved.",
+    },
+    webcok:{
+        ge: "ვებსაიტი იყენებს cookie ფაილებს",
+        en: "The website uses cookie files",
+    },
+    wetax1:{
+        ge:"ვეთანხმები",
+        en: "I agree",
+    },
+    wetax2:{
+        ge:"არ ვეთანხმები",
+        en: "I dont agree",
+    },
+    avtori:{
+        ge: "კვირის ავტორი",
+        en: "Weekly Author",
+    },
+    avtori1:{
+        ge: "ჯეინ ოსტინი",
+        en: "Jane austen",
+    },
+    avtori2:{
+        ge: "ინგლისელი მწერალი, რომანისტი, ინგლისური ლიტერატურის თვალსაჩინო წარმომადგენელი, რომელიც ცნობილია თავისი 6 ძირითადი რომანით. ჯეინ ოსტინს მოიხსენიებენ, როგორც სენტიმენტალიზმის სკოლის უბდალო წარმომადგენლად ასევე ინგლისური რეალიზმის წინამორბედად.",
+        en: "An English writer, novelist, and a prominent representative of English literature, who is known for her six major novels. Jane Austen is referred to as a leading representative of the school of sentimentalism, as well as a precursor to English realism.",
+    },
+     book12:{
+        ge: "გონების ხმა",
+        en: "voice of the mind.",
+    },
+    book13:{
+        ge: "გონება და გრძნობა",
+        en: "Mind and feeling",
+    },
+    book14:{
+        ge: "ამპარტავნობა და ამოჩემება",
+        en: "pride and favoritism",
+    },
+    book15:{
+        ge: "ემა",
+        en: "Emma",
     }
+
 
 
 };
 
 
-// Change URL language when select is changed
+// გამოიყენება, რათა მოისმინოს "change" მოვლენა იმ ელემენტზე, რომლის კლასიც არის 
 document.querySelector('.change-lang').addEventListener('change', changeURLLanguage);
 
 function changeURLLanguage() {
     const lang = document.querySelector('.change-lang').value;
     if (allLang.includes(lang)) {
-        location.hash = lang; // Update URL hash
+        location.hash = lang; // 
         changeLanguage(lang); // Apply language change
     }
 }
 
-function changeLanguage(lang = window.location.hash.substr(1)) {
+function changeLanguage(lang = window.location.hash.substr(1)) { // ფუნქცია იღებს ენას, თუ არ არის მიცემული, მაშინ ენა იღება URL-დან (ჰეშისგან)
     if (!allLang.includes(lang)) {
-        lang = 'ge'; // Default to Georgian if no valid language is found
+        lang = 'ge'; //  დეფოლტური ენა იქნება "ge" (ქართული)
         location.hash = lang;
     }
 
 
-    // Set the selected language in the dropdown
+    // ვაყენებთ language-selector-ის ველზე ენის მნიშვნელობას
     document.querySelector('.change-lang').value = lang;
 
-    // Update text content for each element with a matching key
+    // ენის შეცვლის შემდეგ, ყოველი ელემენტის ტექსტის განახლება
     Object.keys(langArr).forEach(key => {
-        document.querySelectorAll(`.lng-${key}`).forEach(element => {
+        document.querySelectorAll(`.lng-${key}`).forEach(element => { // // პოულობს კლას რომელიც იწყება "lng-" და ემთხვევა ამ კლავიშს
             element.innerHTML = langArr[key][lang];
         });
     });
 }changeLanguage(); 
-
